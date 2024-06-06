@@ -1,0 +1,26 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html { 
+    font-size: 62.5%;
+  }
+  .container { 
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 40px;
+  }
+  .item { 
+    background: #add901;
+    display: grid; 
+    place-content: flex-end; /* con esto lo posicionamos Abajo a la Derecha */
+  }
+  .item .item-card {
+    height: 80px;
+    width: 40px;
+    background: #62a81e;
+  }
