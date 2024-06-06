@@ -1,0 +1,28 @@
+.contenedor {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+    place-content: center;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    background-color: #72cb10;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.item:nth-child(2),
+.item:nth-child(5) {
+    background-color: #5ab507;
+}
+.item:nth-child(3),
+.item:nth-child(6) {
+    background-color: #419f00;
+}
+span {
+    background-color: #337900;
+    color: white;
+}
