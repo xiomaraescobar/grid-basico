@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas: 
+    "one two two"
+    "three three four"
+    "five six seven";
+    place-content: center;
+    gap: 15px;
+}
+.item{
+    border: 1px solid black;
+    box-shadow: 4px 4px rgb(0,0,0,0.16);
+}
+.item1{
+    background-color: rgb(247, 192, 255);
+    grid-area: one
+}
+.item2{
+    background-color: rgb(241, 250, 199);
+    grid-area: two;
+}
+.item3{
+    background-color:  rgb(192, 255, 217);
+    grid-area: three;
+}
+.item4{
+    background-color:rgb(247, 192, 255);
+    grid-area: four;
+}
+.item5{
+    background-color: rgb(247, 192, 255);
+    grid-area: five;
+}
+.item6{
+    background-color:rgb(241, 250, 199);
+    grid-area: six;
+}
+.item7{
+    background-color: rgb(192, 255, 217);
+    grid-area: seven;
+}
